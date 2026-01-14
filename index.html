@@ -36,7 +36,7 @@
       max-width: 1000px;
       margin: auto;
     }
-    .services {
+    .services, .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
@@ -47,26 +47,42 @@
       padding: 20px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
+    .projects img {
+      width: 100%;
+      border-radius: 10px;
+    }
     footer {
       background: #0f172a;
       color: #fff;
       text-align: center;
       padding: 20px;
     }
-    button {
+    button, input, textarea {
       background: red;
       color: #fff;
       border: none;
-      padding: 12px 20px;
+      padding: 10px;
       border-radius: 6px;
       cursor: pointer;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 10px;
     }
     button:hover {
       background: darkred;
     }
+    input, textarea {
+      color: #333;
+      background: #f5f5f5;
+      border: 1px solid #ccc;
+    }
     iframe {
       margin-top: 20px;
       border-radius: 10px;
+    }
+    @media(max-width:768px){
+      nav a { display:block; margin:10px 0; }
+      section { padding:20px; }
     }
   </style>
 </head>
@@ -81,6 +97,7 @@
   <nav>
     <a href="#apropos">À propos</a>
     <a href="#services">Services</a>
+    <a href="#realisations">Réalisations</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -109,6 +126,32 @@
     </div>
   </section>
 
+  <section id="realisations">
+    <h2>Nos réalisations</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="data:image/png;base64,/* ici le Base64 de la première image */" alt="Projet 1">
+        <h3>Projet 1</h3>
+        <p>Exemple de finition intérieure.</p>
+      </div>
+      <div class="card">
+        <img src="data:image/png;base64,/* Base64 de la deuxième image */" alt="Projet 2">
+        <h3>Projet 2</h3>
+        <p>Exemple de rénovation.</p>
+      </div>
+      <div class="card">
+        <img src="data:image/png;base64,/* Base64 de la troisième image */" alt="Projet 3">
+        <h3>Projet 3</h3>
+        <p>Travail de préparation des murs.</p>
+      </div>
+      <div class="card">
+        <img src="data:image/png;base64,/* Base64 de la quatrième image */" alt="Projet 4">
+        <h3>Projet 4</h3>
+        <p>Sol et finitions terminés.</p>
+      </div>
+    </div>
+  </section>
+
   <section id="contact">
     <h2>Contact</h2>
     <p>Email : <a href="mailto:saada.finitions.expertises@outlook.fr">saada.finitions.expertises@outlook.fr</a></p>
@@ -116,7 +159,7 @@
     <p>
       Adresse :
       <a href="https://www.google.com/maps?q=82290+RTE+DE+MEAUXAC" target="_blank">
-        82290 ROUTE DE MEAUZAC
+        82290 RTE DE MEAUZAC
       </a>
     </p>
 
@@ -127,6 +170,14 @@
       style="border:0; border-radius:10px;"
       loading="lazy">
     </iframe>
+
+    <h3>Envoyez-nous un message</h3>
+    <form action="mailto:saada.finitions.expertises@outlook.fr" method="post" enctype="text/plain">
+      <input type="text" name="Nom" placeholder="Votre nom" required>
+      <input type="email" name="Email" placeholder="Votre email" required>
+      <textarea name="Message" placeholder="Votre message" rows="5" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
   </section>
 
   <footer>
