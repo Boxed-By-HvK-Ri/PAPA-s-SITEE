@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VZZY</title>
+  <title>SFE</title>
   <style>
     body {
       margin: 0;
@@ -32,4 +32,106 @@
       font-weight: bold;
     }
     section {
-      paddin
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    footer {
+      background: #0f172a;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    button {
+      background: red;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: darkred;
+    }
+    iframe {
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SFE</h1>
+    <p>Votre solution professionnelle</p>
+    <button>Nous contacter</button>
+  </header>
+
+  <nav>
+    <a href="#apropos">À propos</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="apropos">
+    <h2>À propos de nous</h2>
+    <p>
+      SFE est spécialisée dans le bâtiment, les finitions et expertises. Nous offrons des services professionnels de haute qualité pour tous vos projets.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Nos services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Finitions intérieures</h3>
+        <p>Pose de revêtements, peinture, décoration intérieure.</p>
+      </div>
+      <div class="card">
+        <h3>Rénovation</h3>
+        <p>Travaux de rénovation complète ou partielle.</p>
+      </div>
+      <div class="card">
+        <h3>Expertises</h3>
+        <p>Diagnostic technique et conseils professionnels.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email : <a href="mailto:saada.finitions.expertises@outlook.fr">saada.finitions.expertises@outlook.fr</a></p>
+    <p>Téléphone : <a href="tel:0652452545">06 52 45 25 45</a></p>
+    <p>
+      Adresse :
+      <a href="https://www.google.com/maps?q=82290+RTE+DE+MEAUXAC" target="_blank">
+        82290 ROUTE DE MEAUZAC
+      </a>
+    </p>
+
+    <iframe
+      src="https://www.google.com/maps?q=82290+RTE+DE+MEAUXAC&output=embed"
+      width="100%"
+      height="300"
+      style="border:0; border-radius:10px;"
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <footer>
+    <p>© 2026 SFE. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
