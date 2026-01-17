@@ -1,35 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
+<!-- Google Search Console -->
+<meta name="google-site-verification" content="4zOOTavL7lG5ovAHeAT4s37GCSHoW2FQiCtfkVbPYzI" />
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- NOM OFFICIEL DU SITE -->
+<title>SAADA FINITIONS EXPERTISES</title>
+
 <!-- SEO -->
-<title>Saada Finitions Expertise</title>
-<meta name="description" content="Saada Finitions Expertise - Spécialiste en peinture, rénovation et finitions bâtiment.">
-<meta name="keywords" content="Saada Finitions Expertise, finitions, rénovation, bâtiment, expertise, Saada">
-<meta name="author" content="Saada Finitions Expertise">
+<meta name="description" content="SAADA FINITIONS EXPERTISES - Spécialiste en finitions, rénovation et expertise bâtiment.">
+<meta name="keywords" content="Saada Finitions Expertises, finitions, rénovation, bâtiment, expertise">
+<meta name="author" content="SAADA FINITIONS EXPERTISES">
 
 <!-- FAVICON -->
 <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-<!-- Open Graph / Réseaux sociaux -->
-<meta property="og:title" content="Saada Finitions Expertise">
-<meta property="og:description" content="Spécialiste en peinture, rénovation et expertise bâtiment.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="images/og-image.jpg">
-<meta property="og:url" content="https://www.sfe-expertises.fr">
-
-<!-- JSON-LD pour nom officiel du site -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Saada Finitions Expertises",
-  "url": " https://boxed-by-hvk-ri.github.io/PAPA-s-SITEE/",
-  "logo": "https://www.sfe-expertises.fr/images/logo.png"
-}
-</script>
 
 <style>
 * { box-sizing: border-box; scroll-behavior: smooth; }
@@ -50,10 +38,14 @@ header {
   animation: fadeIn 1.2s ease;
 }
 
-header h1.logo {
+header h1 {
   color: red;
   font-size: 52px;
   margin-bottom: 5px;
+}
+
+.logo {
+  font-weight: bold;
   letter-spacing: 3px;
 }
 
@@ -66,8 +58,8 @@ header button {
   border-radius: 30px;
   cursor: pointer;
   margin-top: 20px;
-  transition: background 0.3s;
 }
+
 header button:hover { background: darkred; }
 
 /* NAV */
@@ -85,21 +77,18 @@ nav a {
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
 }
-nav a:hover { color: red; }
 
-/* MAIN CONTENT */
-main {
-  max-width: 1100px;
-  margin: auto;
-}
+nav a:hover { color: red; }
 
 /* SECTIONS */
 section {
+  max-width: 1100px;
+  margin: auto;
   padding: 60px 20px;
   animation: fadeInUp 1s ease;
 }
+
 h2 {
   text-align: center;
   margin-bottom: 40px;
@@ -118,14 +107,12 @@ h2 {
   padding: 25px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   transition: transform 0.3s;
-  text-align: center;
 }
+
 .card:hover { transform: translateY(-6px); }
 
 .projects img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -155,8 +142,8 @@ button.send {
   font-size: 16px;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s;
 }
+
 button.send:hover { background: darkred; }
 
 /* FOOTER */
@@ -193,9 +180,7 @@ footer {
   border-radius: 50%;
   cursor: pointer;
   display: none;
-  transition: background 0.3s;
 }
-#topBtn:hover { background: darkred; }
 
 /* MOBILE */
 @media(max-width:768px){
@@ -217,7 +202,8 @@ footer {
 <body>
 
 <header>
-  <h1 class="logo">Saada Finitions Expertises</h1>
+  <h1 class="logo">SFE</h1>
+  <p>SAADA FINITIONS EXPERTISES</p>
   <p>Professionnels du bâtiment</p>
   <a href="#contact"><button>Nous contacter</button></a>
 </header>
@@ -229,68 +215,65 @@ footer {
   <a href="#contact">Contact</a>
 </nav>
 
-<main>
-  <section id="apropos">
-    <h2>À propos</h2>
-    <p style="text-align:center;">
-      Saada Finitions Expertises est spécialisée dans les finitions intérieures, que ce soit les peintures ou les revêtements au sol, ou encore la rénovation. Nous sommes à votre écoute pour mener vos projet à leur réalisations.
-    </p>
-  </section>
+<section id="apropos">
+<h2>À propos</h2>
+<p style="text-align:center;">
+SAADA FINITIONS EXPERTISES est spécialisée dans les finitions intérieures,
+la rénovation et l’expertise bâtiment. Travail sérieux, propre et garanti.
+</p>
+</section>
 
-  <section id="services">
-    <h2>Nos services</h2>
-    <div class="services">
-      <div class="card"><h3>Finitions</h3><p>Placo, peinture, enduits.</p></div>
-      <div class="card"><h3>Rénovation</h3><p>Travaux complets ou partiels.</p></div>
-      <div class="card"><h3>Expertises</h3><p>Diagnostic et conseils.</p></div>
-    </div>
-  </section>
+<section id="services">
+<h2>Nos services</h2>
+<div class="services">
+  <div class="card"><h3>Finitions</h3><p>Placo, peinture, enduits.</p></div>
+  <div class="card"><h3>Rénovation</h3><p>Travaux complets ou partiels.</p></div>
+  <div class="card"><h3>Expertises</h3><p>Diagnostic et conseils.</p></div>
+</div>
+</section>
 
-  <section id="realisations">
-    <h2>Nos réalisations</h2>
-    <div class="projects">
-      <div class="card"><img src="images/projet1.jpg" alt="Chantier en cours"></div>
-      <div class="card"><img src="images/projet2.jpg" alt="Placo et cloisons"></div>
-      <div class="card"><img src="images/projet3.jpg" alt="Préparation murs"></div>
-      <div class="card"><img src="images/projet4.jpg" alt="Sol terminé"></div>
-    </div>
-  </section>
+<section id="realisations">
+<h2>Nos réalisations</h2>
+<div class="projects">
+  <div class="card"><img src="images/projet1.jpg" alt="Chantier en cours"></div>
+  <div class="card"><img src="images/projet2.jpg" alt="Placo et cloisons"></div>
+  <div class="card"><img src="images/projet3.jpg" alt="Préparation murs"></div>
+  <div class="card"><img src="images/projet4.jpg" alt="Sol terminé"></div>
+</div>
+</section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="contact-box">
-      <p>📧 <a href="mailto:saada.finitions.expertises@outlook.fr">saada.finitions.expertises@outlook.fr</a></p>
-      <p>📞 <a href="tel:+33652452545">06 52 45 25 45</a></p>
-      <p>📍 82290 Route de Meauzac</p>
+<section id="contact">
+<h2>Contact</h2>
+<div class="contact-box">
+<p>📧 <a href="mailto:saada.finitions.expertises@outlook.fr">saada.finitions.expertises@outlook.fr</a></p>
+<p>📞 <a href="tel:0652452545">06 52 45 25 45</a></p>
+<p>📍 82290 Route de Meauzac</p>
 
-      <iframe src="https://www.google.com/maps?q=82290+RTE+DE+MEAUZAC&output=embed"
-        width="100%" height="300" style="border-radius:10px; border:0;"></iframe>
+<iframe src="https://www.google.com/maps?q=82290+RTE+DE+MEAUZAC&output=embed"
+width="100%" height="300" style="border-radius:10px; border:0;"></iframe>
 
-      <form action="https://formspree.io/f/xykkzogr" method="POST">
-        <input type="text" name="Nom" placeholder="Votre nom" required>
-        <input type="email" name="Email" placeholder="Votre email" required>
-        <textarea name="Message" rows="5" placeholder="Votre message" required></textarea>
-        <button class="send" type="submit">Envoyer</button>
-      </form>
-    </div>
-  </section>
-</main>
+<form action="https://formspree.io/f/xykkzogr" method="POST">
+  <input type="text" name="Nom" placeholder="Votre nom" required>
+  <input type="email" name="Email" placeholder="Votre email" required>
+  <textarea name="Message" rows="5" placeholder="Votre message" required></textarea>
+  <button class="send" type="submit">Envoyer</button>
+</form>
+</div>
+</section>
 
 <footer>
-  <p>© 2026 Saada Finitions Expertise- Tous Droits Réservés</p>
+<p>© 2026 SAADA FINITIONS EXPERTISES</p>
 </footer>
 
-<!-- WhatsApp -->
-<a class="whatsapp" href="https://wa.me/33652452545" target="_blank" rel="noopener noreferrer">💬</a>
+<a class="whatsapp" href="https://wa.me/33652452545" target="_blank">💬</a>
 
-<!-- Scroll to top -->
-<button id="topBtn">↑</button>
+<button id="topBtn" onclick="window.scrollTo(0,0)">↑</button>
 
 <script>
-// Scroll-top button
-const topBtn = document.getElementById("topBtn");
-window.onscroll = () => { topBtn.style.display = window.scrollY > 300 ? "block" : "none"; };
-topBtn.onclick = () => { window.scrollTo({ top: 0, behavior: "smooth" }); };
+window.onscroll = function() {
+  document.getElementById("topBtn").style.display =
+    window.scrollY > 300 ? "block" : "none";
+};
 </script>
 
 </body>
