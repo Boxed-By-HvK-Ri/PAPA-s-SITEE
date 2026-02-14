@@ -61,14 +61,6 @@ header button {
 }
 header button:hover { background: darkred; }
 
-/* IMAGE STYLE */
-.header-image {
-  margin-top: 30px;
-  max-width: 400px;
-  width: 90%;
-  border-radius: 10px;
-}
-
 /* NAV */
 nav {
   background: #020617;
@@ -209,9 +201,12 @@ footer {
       Nous sommes à votre écoute pour mener vos projets à leur réalisation.
     </p>
 
-    <!-- IMAGE DÉPLACÉE DANS À PROPOS -->
+    <!-- PDF intégré via iframe -->
     <div style="text-align:center; margin-top:30px;">
-      <img src="images/promo.jpg" alt="Promotion Saada Finitions Expertises" class="header-image">
+      <iframe src="images/promo.pdf" width="80%" height="600px" style="border:1px solid #ccc; border-radius:10px;">
+        Votre navigateur ne supporte pas les PDFs. 
+        <a href="images/promo.pdf" target="_blank">Télécharger le PDF</a>.
+      </iframe>
     </div>
   </section>
 
