@@ -61,6 +61,14 @@ header button {
 }
 header button:hover { background: darkred; }
 
+/* IMAGE AJOUTÉE */
+.header-image {
+  margin-top: 30px;
+  max-width: 400px;
+  width: 90%;
+  border-radius: 10px;
+}
+
 /* NAV */
 nav {
   background: #020617;
@@ -76,50 +84,14 @@ nav a {
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
 }
 nav a:hover { color: red; }
 
 /* MAIN */
 main { max-width: 1100px; margin: auto; }
 
-/* SECTIONS */
-section { padding: 60px 20px; animation: fadeInUp 1s ease; }
+section { padding: 60px 20px; }
 h2 { text-align: center; margin-bottom: 40px; }
-
-/* PROMO SECTION PREMIUM */
-.promo-section {
-  background: linear-gradient(135deg, #b91c1c, #7f1d1d);
-  padding: 60px 20px;
-  text-align: center;
-  color: white;
-  position: relative;
-  overflow: hidden;
-}
-
-.promo-content h2 {
-  font-size: 42px;
-  margin-bottom: 15px;
-  animation: pulse 1.5s infinite;
-}
-
-.promo-content p {
-  font-size: 20px;
-  margin-bottom: 25px;
-}
-
-.promo-content img {
-  max-width: 420px;
-  width: 90%;
-  border-radius: 20px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-  animation: zoomIn 1.2s ease;
-  transition: transform 0.4s ease;
-}
-
-.promo-content img:hover {
-  transform: scale(1.05);
-}
 
 /* CARDS */
 .services, .projects {
@@ -133,10 +105,8 @@ h2 { text-align: center; margin-bottom: 40px; }
   border-radius: 15px;
   padding: 25px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
   text-align: center;
 }
-.card:hover { transform: translateY(-6px); }
 
 .projects img {
   width: 100%;
@@ -171,7 +141,6 @@ button.send {
   font-size: 16px;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s;
 }
 button.send:hover { background: darkred; }
 
@@ -194,7 +163,6 @@ footer {
   border-radius: 50%;
   font-size: 24px;
   text-decoration: none;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 /* SCROLL TOP */
@@ -210,24 +178,9 @@ footer {
   cursor: pointer;
   display: none;
 }
-#topBtn:hover { background: darkred; }
 
-/* MOBILE */
 @media(max-width:768px){
   nav a { display:block; margin:10px 0; }
-}
-
-/* ANIMATIONS */
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-@keyframes zoomIn {
-  from { opacity: 0; transform: scale(0.8); }
-  to { opacity: 1; transform: scale(1); }
 }
 </style>
 </head>
@@ -238,6 +191,9 @@ footer {
   <h1 class="logo">Saada Finitions Expertises</h1>
   <p>Professionnels du bâtiment</p>
   <a href="#contact"><button>Nous contacter</button></a>
+
+  <!-- TON IMAGE AJOUTÉE ICI -->
+  <img src="images/promo.jpg" alt="Promotion Saada Finitions Expertises" class="header-image">
 </header>
 
 <nav>
@@ -248,16 +204,6 @@ footer {
 </nav>
 
 <main>
-
-  <!-- SECTION PROMO -->
-  <section class="promo-section">
-    <div class="promo-content">
-      <h2>🔥 SUPER PROMO -50% 🔥</h2>
-      <p>Sur tous travaux de peintures : neufs ou rénovations</p>
-      <img src="images/promo.jpg" alt="Super Promo -50% Saada Finitions Expertises">
-    </div>
-  </section>
-
   <section id="apropos">
     <h2>À propos</h2>
     <p style="text-align:center;">
@@ -304,7 +250,6 @@ footer {
       </form>
     </div>
   </section>
-
 </main>
 
 <footer>
