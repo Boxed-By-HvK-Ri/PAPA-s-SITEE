@@ -1,46 +1,26 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>  
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- SEO -->
-<title>SAADA FINITIONS EXPERTISES</title> <!-- Nom officiel mis à jour -->
-<!-- Titre officiel -->
 <title>SAADA FINITIONS EXPERTISES</title>
 
-  
-<!-- Forcer le nom du site pour Google -->
 <meta property="og:site_name" content="SAADA FINITIONS EXPERTISES">
 <meta name="application-name" content="SAADA FINITIONS EXPERTISES">
-
-<!-- Google Search Console -->
 <meta name="google-site-verification" content="4zOOTavL7lG5ovAHeAT4s37GCSHoW2FQiCtfkVbPYzI" />
 
 <meta name="description" content="Saada Finitions Expertise - Spécialiste en peinture, rénovation et finitions bâtiment.">
 <meta name="keywords" content="Saada Finitions Expertise, finitions, rénovation, bâtiment, expertise, Saada">
 <meta name="author" content="Saada Finitions Expertise">
 
-<!-- FAVICON -->
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-<!-- Open Graph / Réseaux sociaux -->
 <meta property="og:title" content="Saada Finitions Expertise">
 <meta property="og:description" content="Spécialiste en peinture, rénovation et expertise bâtiment.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="images/og-image.jpg">
 <meta property="og:url" content="https://www.sfe-expertises.fr">
-
-<!-- JSON-LD pour nom officiel du site -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Saada Finitions Expertises",
-  "url": "https://boxed-by-hvk-ri.github.io/PAPA-s-SITEE/",
-  "logo": "https://www.sfe-expertises.fr/images/logo.png"
-}
-</script>
 
 <style>
 * { box-sizing: border-box; scroll-behavior: smooth; }
@@ -100,20 +80,45 @@ nav a {
 }
 nav a:hover { color: red; }
 
-/* MAIN CONTENT */
-main {
-  max-width: 1100px;
-  margin: auto;
-}
+/* MAIN */
+main { max-width: 1100px; margin: auto; }
 
 /* SECTIONS */
-section {
+section { padding: 60px 20px; animation: fadeInUp 1s ease; }
+h2 { text-align: center; margin-bottom: 40px; }
+
+/* PROMO SECTION PREMIUM */
+.promo-section {
+  background: linear-gradient(135deg, #b91c1c, #7f1d1d);
   padding: 60px 20px;
-  animation: fadeInUp 1s ease;
-}
-h2 {
   text-align: center;
-  margin-bottom: 40px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.promo-content h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  animation: pulse 1.5s infinite;
+}
+
+.promo-content p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.promo-content img {
+  max-width: 420px;
+  width: 90%;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  animation: zoomIn 1.2s ease;
+  transition: transform 0.4s ease;
+}
+
+.promo-content img:hover {
+  transform: scale(1.05);
 }
 
 /* CARDS */
@@ -204,7 +209,6 @@ footer {
   border-radius: 50%;
   cursor: pointer;
   display: none;
-  transition: background 0.3s;
 }
 #topBtn:hover { background: darkred; }
 
@@ -214,13 +218,16 @@ footer {
 }
 
 /* ANIMATIONS */
-@keyframes fadeIn {
-  from { opacity:0; }
-  to { opacity:1; }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
-@keyframes fadeInUp {
-  from { opacity:0; transform:translateY(20px); }
-  to { opacity:1; transform:translateY(0); }
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
 }
 </style>
 </head>
@@ -241,10 +248,22 @@ footer {
 </nav>
 
 <main>
+
+  <!-- SECTION PROMO -->
+  <section class="promo-section">
+    <div class="promo-content">
+      <h2>🔥 SUPER PROMO -50% 🔥</h2>
+      <p>Sur tous travaux de peintures : neufs ou rénovations</p>
+      <img src="images/promo.jpg" alt="Super Promo -50% Saada Finitions Expertises">
+    </div>
+  </section>
+
   <section id="apropos">
     <h2>À propos</h2>
     <p style="text-align:center;">
-      Saada Finitions Expertises est spécialisée dans les finitions intérieures, que ce soit les peintures ou les revêtements au sol, ou encore la rénovation. Nous sommes à votre écoute pour mener vos projets à leur réalisation.
+      Saada Finitions Expertises est spécialisée dans les finitions intérieures,
+      peintures, revêtements de sol et rénovation complète.
+      Nous sommes à votre écoute pour mener vos projets à leur réalisation.
     </p>
   </section>
 
@@ -285,20 +304,17 @@ footer {
       </form>
     </div>
   </section>
+
 </main>
 
 <footer>
-  <p>© 2026 Saada Finitions Expertises  Tous Droits Réservés</p>
+  <p>© 2026 Saada Finitions Expertises - Tous Droits Réservés</p>
 </footer>
 
-<!-- WhatsApp -->
-<a class="whatsapp" href="https://wa.me/33652452545" target="_blank" rel="noopener noreferrer">💬</a>
-
-<!-- Scroll to top -->
+<a class="whatsapp" href="https://wa.me/33652452545" target="_blank">💬</a>
 <button id="topBtn">↑</button>
 
 <script>
-// Scroll-top button
 const topBtn = document.getElementById("topBtn");
 window.onscroll = () => { topBtn.style.display = window.scrollY > 300 ? "block" : "none"; };
 topBtn.onclick = () => { window.scrollTo({ top: 0, behavior: "smooth" }); };
