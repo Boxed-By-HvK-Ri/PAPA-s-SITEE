@@ -6,21 +6,11 @@
 
 <title>SAADA FINITIONS EXPERTISES</title>
 
-<meta property="og:site_name" content="SAADA FINITIONS EXPERTISES">
-<meta name="application-name" content="SAADA FINITIONS EXPERTISES">
-<meta name="google-site-verification" content="4zOOTavL7lG5ovAHeAT4s37GCSHoW2FQiCtfkVbPYzI" />
-
 <meta name="description" content="Saada Finitions Expertise - Spécialiste en peinture, rénovation et finitions bâtiment.">
 <meta name="keywords" content="Saada Finitions Expertise, finitions, rénovation, bâtiment, expertise, Saada">
 <meta name="author" content="Saada Finitions Expertise">
 
 <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-<meta property="og:title" content="Saada Finitions Expertise">
-<meta property="og:description" content="Spécialiste en peinture, rénovation et expertise bâtiment.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="images/og-image.jpg">
-<meta property="og:url" content="https://www.sfe-expertises.fr">
 
 <style>
 * { box-sizing: border-box; scroll-behavior: smooth; }
@@ -32,13 +22,11 @@ body {
   color: #333;
 }
 
-/* HEADER */
 header {
   background: linear-gradient(135deg, #020617, #0f172a);
   color: white;
   text-align: center;
   padding: 80px 20px;
-  animation: fadeIn 1.2s ease;
 }
 
 header h1.logo {
@@ -57,11 +45,8 @@ header button {
   border-radius: 30px;
   cursor: pointer;
   margin-top: 20px;
-  transition: background 0.3s;
 }
-header button:hover { background: darkred; }
 
-/* NAV */
 nav {
   background: #020617;
   padding: 15px;
@@ -77,15 +62,12 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
-nav a:hover { color: red; }
 
-/* MAIN */
 main { max-width: 1100px; margin: auto; }
 
 section { padding: 60px 20px; }
 h2 { text-align: center; margin-bottom: 40px; }
 
-/* CARDS */
 .services, .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -105,29 +87,8 @@ h2 { text-align: center; margin-bottom: 40px; }
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
-  margin-bottom: 10px;
 }
 
-/* PDF responsive */
-.pdf-container {
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  margin: 30px auto;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-}
-
-.pdf-container iframe {
-  width: 100%;
-  height: 0;
-  padding-bottom: 75%;
-  border: none;
-}
-
-/* CONTACT */
 .contact-box {
   background: white;
   padding: 30px;
@@ -153,9 +114,7 @@ button.send {
   border-radius: 8px;
   cursor: pointer;
 }
-button.send:hover { background: darkred; }
 
-/* FOOTER */
 footer {
   background: #020617;
   color: white;
@@ -163,35 +122,20 @@ footer {
   padding: 25px;
 }
 
-/* WHATSAPP */
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: white;
-  padding: 15px 18px;
-  border-radius: 50%;
-  font-size: 24px;
-  text-decoration: none;
+/* PDF */
+.pdf-container {
+  width: 100%;
+  height: 800px;
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* SCROLL TOP */
-#topBtn {
-  position: fixed;
-  bottom: 90px;
-  right: 22px;
-  background: red;
-  color: white;
+.pdf-container iframe {
+  width: 100%;
+  height: 100%;
   border: none;
-  padding: 12px 15px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none;
-}
-
-@media(max-width:768px){
-  nav a { display:block; margin:10px 0; }
 }
 </style>
 </head>
@@ -212,74 +156,54 @@ footer {
 </nav>
 
 <main>
-  <section id="apropos">
-    <h2>À propos</h2>
-    <p style="text-align:center;">
-      Saada Finitions Expertises est spécialisée dans les finitions intérieures,
-      peintures, revêtements de sol et rénovation complète.
-      Nous sommes à votre écoute pour mener vos projets à leur réalisation.
-    </p>
 
-    <!-- PDF intégré via iframe responsive -->
-    <div class="pdf-container">
-      <iframe src="images/promo.pdf">
-        Votre navigateur ne supporte pas les PDFs. 
-        <a href="images/promo.pdf" target="_blank">Télécharger le PDF</a>.
-      </iframe>
-    </div>
-  </section>
+<section id="apropos">
+  <h2>À propos</h2>
+  <p style="text-align:center;">
+    Saada Finitions Expertises est spécialisée dans les finitions intérieures,
+    peintures, revêtements de sol et rénovation complète.
+  </p>
 
-  <section id="services">
-    <h2>Nos services</h2>
-    <div class="services">
-      <div class="card"><h3>Finitions</h3><p>Placo, peinture, enduits.</p></div>
-      <div class="card"><h3>Rénovation</h3><p>Travaux complets ou partiels.</p></div>
-      <div class="card"><h3>Expertises</h3><p>Diagnostic et conseils.</p></div>
-    </div>
-  </section>
+  <!-- PDF AFFICHÉ DIRECTEMENT -->
+  <div class="pdf-container">
+    <iframe src="https://docs.google.com/gview?url=https://boxed-by-hvk-ri.github.io/PAPA-s-SITEE/images/promo.pdf&embedded=true"></iframe>
+  </div>
 
-  <section id="realisations">
-    <h2>Nos réalisations</h2>
-    <div class="projects">
-      <div class="card"><img src="images/projet1.jpg" alt="Chantier en cours"></div>
-      <div class="card"><img src="images/projet2.jpg" alt="Placo et cloisons"></div>
-      <div class="card"><img src="images/projet3.jpg" alt="Préparation murs"></div>
-      <div class="card"><img src="images/projet4.jpg" alt="Sol terminé"></div>
-    </div>
-  </section>
+</section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="contact-box">
-      <p>📧 <a href="mailto:saada.finitions.expertises@outlook.fr">saada.finitions.expertises@outlook.fr</a></p>
-      <p>📞 <a href="tel:+33652452545">06 52 45 25 45</a></p>
-      <p>📍 82290 Route de Meauzac</p>
+<section id="services">
+  <h2>Nos services</h2>
+  <div class="services">
+    <div class="card"><h3>Finitions</h3><p>Placo, peinture, enduits.</p></div>
+    <div class="card"><h3>Rénovation</h3><p>Travaux complets ou partiels.</p></div>
+    <div class="card"><h3>Expertises</h3><p>Diagnostic et conseils.</p></div>
+  </div>
+</section>
 
-      <iframe src="https://www.google.com/maps?q=82290+RTE+DE+MEAUZAC&output=embed"
-        width="100%" height="300" style="border-radius:10px; border:0;"></iframe>
+<section id="realisations">
+  <h2>Nos réalisations</h2>
+  <div class="projects">
+    <div class="card"><img src="images/projet1.jpg"></div>
+    <div class="card"><img src="images/projet2.jpg"></div>
+    <div class="card"><img src="images/projet3.jpg"></div>
+    <div class="card"><img src="images/projet4.jpg"></div>
+  </div>
+</section>
 
-      <form action="https://formspree.io/f/xykkzogr" method="POST">
-        <input type="text" name="Nom" placeholder="Votre nom" required>
-        <input type="email" name="Email" placeholder="Votre email" required>
-        <textarea name="Message" rows="5" placeholder="Votre message" required></textarea>
-        <button class="send" type="submit">Envoyer</button>
-      </form>
-    </div>
-  </section>
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact-box">
+    <p>📧 saada.finitions.expertises@outlook.fr</p>
+    <p>📞 06 52 45 25 45</p>
+    <p>📍 82290 Route de Meauzac</p>
+  </div>
+</section>
+
 </main>
 
 <footer>
   <p>© 2026 Saada Finitions Expertises - Tous Droits Réservés</p>
 </footer>
-
-<a class="whatsapp" href="https://wa.me/33652452545" target="_blank">💬</a>
-<button id="topBtn">↑</button>
-
-<script>
-const topBtn = document.getElementById("topBtn");
-window.onscroll = () => { topBtn.style.display = window.scrollY > 300 ? "block" : "none"; };
-topBtn.onclick = () => { window.scrollTo({ top: 0, behavior: "smooth" }); };
-</script>
 
 </body>
 </html>
